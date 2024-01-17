@@ -64,3 +64,7 @@ from backend
 https://github.com/victoryanonymous/Layer0x/assets/111217552/cd06897e-594e-424f-8e6b-4ff370cf4f11
 
 https://github.com/victoryanonymous/Layer0x/assets/111217552/fb494425-5596-4f8b-82e7-a0f5513d9a42
+
+
+## 🚀 About Me
+I'm a mern stack developer...
