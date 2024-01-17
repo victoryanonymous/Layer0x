@@ -12,3 +12,12 @@ https://github.com/victoryanonymous/Layer0x/assets/111217552/dd289639-52fc-4db5-
 Challenge 3: (Calculate Average and Deviation of JSON Objects with Subjects)
 
 https://github.com/victoryanonymous/Layer0x/assets/111217552/d5a93089-7a3a-4671-bd79-157ec970300c
+
+
+## Task : Basic API Development & Deployment
+## Tech Stack
+**Client:** React
+
+**Server:** Node, Express
+
+**Database:** MongoDb
