@@ -21,3 +21,42 @@ https://github.com/victoryanonymous/Layer0x/assets/111217552/d5a93089-7a3a-4671-
 **Server:** Node, Express
 
 **Database:** MongoDb
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+for Backend :
+```bash
+   npm install
+```
+
+Go to the project directory frontend folder
+
+```bash
+  cd frontend
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+To Start the server
+
+from frontend
+
+```bash
+  npm start
+```
+
+from backend 
+```bash
+   node server.js
+```
