@@ -1,0 +1,17 @@
+* {
+  background-color: #bdc3c7;
+}
+
+.app-heading {
+  color: #3498db; 
+}
+
+.app-table {
+  background-color: #ecf0f1; 
+  border-color: #bdc3c7; 
+  text-align: center; 
+}
+
+.app-table th, .app-table td {
+  color: #2c3e50;
+}
