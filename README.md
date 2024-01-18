@@ -28,7 +28,7 @@ https://github.com/victoryanonymous/Layer0x/assets/111217552/d5a93089-7a3a-4671-
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone [https://link-to-project](https://github.com/victoryanonymous/Layer0x.git)
 ```
 
 for Backend :
