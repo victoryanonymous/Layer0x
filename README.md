@@ -13,7 +13,7 @@ https://github.com/victoryanonymous/Layer0x/assets/111217552/dd289639-52fc-4db5-
 
 https://github.com/victoryanonymous/Layer0x/assets/111217552/d5a93089-7a3a-4671-bd79-157ec970300c
 
-https://github.com/victoryanonymous/Layer0x/assets/111217552/1405a75c-ff0a-496a-a10c-7b0c37283059
+![Challenge_3(python)](https://github.com/victoryanonymous/Layer0x/assets/111217552/126942e7-7c9c-4923-8be4-3c1d5e77c0a5)
 
 ## Task : Basic API Development & Deployment
 ## Tech Stack
