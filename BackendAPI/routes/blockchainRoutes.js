@@ -62,6 +62,31 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.put("/:id", async (req, res) => {
+  const { name, chainID, rpcUrl, apiUrl } = req.body;
+  console.log(req.body); // Uncomment for debugging
+
+  try {
+    const blockchain = await Blockchain.findById(req.params.id);
+
+    if (!blockchain) {
+      return res.status(404).json({ error: "Blockchain not found" });
+    }
+
+    blockchain.name = name || blockchain.name;
+    blockchain.chainID = chainID || blockchain.chainID;
+    blockchain.rpcUrl = rpcUrl || blockchain.rpcUrl;
+    blockchain.apiUrl = apiUrl || blockchain.apiUrl;
+
+    const updatedBlockchain = await blockchain.save();
+    console.log(updatedBlockchain); // Uncomment for debugging
+
+    res.status(200).json({ success: true, updatedBlockchain });
+  } catch (error) {
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
 //Delete a blockchain
 router.delete("/:id", async (req, res) => {
   try {
