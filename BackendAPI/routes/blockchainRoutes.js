@@ -11,8 +11,10 @@ router.get("/status", async (req, res) => {
     const statusInfo = await Promise.all(
       blockchains.map(async (blockchain) => {
         try {
+          
           const response = await axios.get(`${blockchain.rpcUrl}/status`);
-          //   console.log(response.data.result);
+          //console.log(response);
+          //console.log(response.data.result);
           const { latest_block_height } = response.data.result.sync_info;
           return {
             name: blockchain.name,
@@ -38,6 +40,30 @@ router.get("/status", async (req, res) => {
       success: false,
       error: "Error fetching status information",
     });
+  }
+});
+
+//update endpoint..
+router.put('/:id', async (req, res) => {
+  const { name, chainID, rpcUrl, apiUrl } = req.body;
+
+  console.log(req.body)
+  
+  try {
+    const updatedBlockchain = await Blockchain.findByIdAndUpdate(
+      req.params.id,
+      { name, chainID, rpcUrl, apiUrl },
+      { new: true }
+    );
+
+    if (!updatedBlockchain) {
+      return res.status(404).json({ error: "Blockchain not found" });
+    }
+
+    res.status(200).json({ success: true, updatedBlockchain });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Internal server error" });
   }
 });
 
