@@ -51,13 +51,13 @@ Install dependencies
 
 To Start the server
 
-from frontend
+from frontend folder
 
 ```bash
   npm start
 ```
 
-from backend 
+from backend(BackEndAPI)
 ```bash
    node server.js
 ```
